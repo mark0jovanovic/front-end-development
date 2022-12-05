@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <form action="script.php" method="POST" enctype="multipart/form-data" name="demo_form" id="demo_form">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br>
+        <br>
+        <label for="passwor">Pasword:</label>
+        <input type="password" id="password">
+        <br>
+<br>
+
+        <input name="country" type="radio" id="Serbia" value="Serbia" checked="checked">
+        <label for="Serbia">Serbia</label>
+  
+        <br>
+  
+        <input name="country" type="radio" id="Romania" value="Romania">
+        <label for="Romania">Romania</label>
+  
+        <br>
+  
+        <input name="country" type="radio" id="Ukraine" value="Ukraine">
+        <label for="Ukraine">Ukraine</label>
+        <br>
+        <br>
+
+        <input type="checkbox" name="question" value="like" id="question">
+        <label for="question">I like Html</label>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <br>
+        <input type="number" name="quantity" min="1" max="5">
+        <br>
+        <br>
+        <input type="color">
+        <br>
+        <br>
+        <input type="range" name="" id="">
+        <br>
+        <br>
+
+        <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias earum natus corrupti est sunt obcaecati nemo, vitae dolore beatae modi minima corporis porro totam in nihil perspiciatis illum odit mollitia.</textarea>
+        <br><br>
+
+        <button>Hallo</button>
+
+
+        <br>
+        <br>
+
+
+        <select name="country" id="country">
+            <option value="Serbia">Serbia</option>
+            <option value="Romania" selected="selected">Romania</option>
+            <option value="Ukraine">Ukraine</option>
+        </select>
+        <br>
+        <br>
+
+
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="name">First name:</label><br>
+            <input type="text" name="name" id="name"><br>
+
+            <label for="surname">Las name:</label><br>
+            <input type="text" name="surname" id="surname"><br>
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Contact</legend>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" name="phone" id="phone">
+        </fieldset>
+
+
+
+        
+
+
+
+
+
+    </form>
+
+</body>
+</html>
