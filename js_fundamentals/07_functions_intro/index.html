@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+
+    <script>
+
+
+        var a = 5;
+        var b = 10;
+        var rectArea = a * b;
+
+        function calculateRectArea(a, b) {
+            return a * b;
+        }
+
+
+        console.log(calculateRectArea(12, 3));
+
+
+        function sayHello(name) {
+            console.log("Hello " + name);
+        }
+
+        sayHello("Milorad")
+
+
+        function sayHelloWorld() {
+            console.log("Hello World")
+        }
+        sayHelloWorld();
+        
+
+
+        function myFunction(...arguments) {
+            console.log(arguments);
+
+        }
+
+        myFunction(1,2,3,45)
+
+
+    </script>
+    
+</body>
+</html>
