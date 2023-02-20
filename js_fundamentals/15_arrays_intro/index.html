@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+
+    <script>
+
+
+        //let car   = "Ford";
+        let cars = ["Ford", "Mazda", "Toyota", "Acura"];
+        cars.sort();
+        for(let i = 0; i < cars.length; i++) {
+            console.log(cars[i]);
+        }
+
+        for(let car in cars) {
+            console.log(cars[car])
+        }
+        for(let car of cars) {
+            console.log(car)
+        }
+
+
+        
+        
+        cars[2] = "Honda";
+        cars.push("Mizubishi")
+        cars.indexOf("Mazda")
+
+
+        console.log(cars.length);
+
+
+
+        var numbers = [1, 2, 5, 23, 0, 11 , 123, -33];
+        numbers.sort(compareNumbers);
+
+        console.log(numbers.toString());
+
+        function compareNumbers(a,b){
+            return a - b;
+        }
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
