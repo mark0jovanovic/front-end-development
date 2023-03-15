@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Atrribute selector</title>
+
+<style>
+    /*#some-id{
+        width: 400px;
+        height: 300px;
+        background-color: red;
+    }*/
+    /*.some-class{
+        width: 400px;
+        height: 300px;
+        background-color: red;
+
+    }*/
+    /*a[target] {
+        color: red;
+    }*/
+    /*a[target="_blank"] {
+        color: red;
+    }*/
+    /*
+    div[class*="wrap"] {
+        width: 400px;
+        height: 300px;
+        background-color: rgb(200, 255, 0);
+
+    }*/
+    /*a[href^="http://www.link-group.eu"] {
+        color: red;
+    }*/
+    a[href$=".pdf"] {
+        color: red;
+    }
+    .headig {
+        color:blue;
+    }
+    a[title~="link"]{
+        color: red;
+    }
+    [class|="top"] {
+        color: red;
+    }
+    
+
+
+
+</style>
+
+</head>
+<body>
+    <div id="some-id" class="some-class"></div>
+
+
+    <a href="http://www.link-group.eu" target="_blank">Link Group</a>
+    <a href="http://www.link-group.eu/careers" target="_self" title="link careers">Link Careers</a>
+    <a href="http://www.google.com">Go to Google</a>
+    <div class="wrapper"></div>
+    <div class="wrap-01"></div>
+    <a href="demo.pdf">Download PDF document</a>
+    <a href="demo.doc">Download Word document</a>
+    <h1 class="heading animate fade">This is document heading</h1>
+
+
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="top">Hello world again!</p>
+    <p class="top text">Hello world once more!</p>
+    
+</body>
+</html>
