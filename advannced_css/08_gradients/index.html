@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Gradients</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 250px;
+            margin: auto;
+        }
+        #box-1 {
+           background: linear-gradient(to top blue, red);
+
+           background: linear-gradient(to bottom blue, red);
+
+           background: linear-gradient(to left blue, red);
+
+           background: linear-gradient(to right blue, red);
+
+           background: linear-gradient(to top blue, red, green);
+
+           background: linear-gradient( blue 33%, red 33%, green 66%);
+
+           background: linear-gradient(transparent, red);
+
+           background: radial-gradient(at top left, red, blue);
+
+           background: radial-gradient(circle, red, blue);
+
+           background: radial-gradient(farthest-corner at 100% 50%, red, blue);
+           
+           background: radial-gradient(closest-side at 100% 50%, red, blue);
+           
+           background: conic-gradient(blue , red);
+
+           background: conic-gradient(from 45deg at 20% 80%, blue , red);
+
+           background: conic-gradient(from 45deg at 20% 80%, blue , red);
+
+           background: repeating-linear-gradient(yellow 0px, red, 30px);
+
+           background: repeating-conic-gradient(yellow 0px, red, 30px);
+
+           background: repeating-radial-gradient(yellow 0px, red, 30px);
+
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"></div>
+    
+</body>
+</html>
