@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid Configuration</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        #grid1 {
+            display: grid;
+            /* grid-template-columns:  1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr; */
+            /* grid-auto-flow: column;
+            grid-auto-flow: row; */
+            /* grid-auto-columns: 180px;
+            grid-auto-rows: 50px; */
+            /* grid-template-columns: repeat(3, minmax(120px, auto)) ;
+            grid-auto-rows: minmax(120px, auto); */
+            /* grid-template-rows: 150px; */
+            /* column-gap: 8px;
+            row-gap: 16px; */
+            /* gap: 16px; */
+            grid-template-columns: 160px 160px 160px ;
+            column-gap: 16px;
+            row-gap: 8px;
+            grid-template-rows: 160px 160px;
+        }
+        #box-1 {
+            /* width: 160px; */
+            height: 120px;
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            line-height:  120px;
+            /* grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3; */
+            /* grid-column: 2 / 3;
+            grid-row: 2 / 3; */
+            /* grid-column: 1 / 4;
+            grid-row: 1 / 3;
+            grid-area: 1/ 1/ 1 / 3 / 4; */
+            grid-area:  a;
+        }
+            #box-2 {
+            /* width: 160px; */
+            height: 120px;
+            background-color: rgb(43, 226, 49);
+            color: white;
+            text-align: center;
+            line-height:  120px;
+            grid-area: b;
+            }
+    </style>
+</head>
+<body>
+    <div id="grid1">
+        <div id="box-1">Area 1</div>
+        <div id="box-2">Area 2</div>
+        
+    </div>
+    
+</body>
+</html>

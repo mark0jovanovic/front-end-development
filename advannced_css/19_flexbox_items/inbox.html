@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Containers</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            color:white;
+        }
+        #flexbox1 {
+            border: 1px solid black;
+            display: flex;
+           
+            height: 50vh;
+          
+            flex-wrap: wrap;
+          
+           
+
+
+        }
+        #flexbox1 div {
+            /* width: 80px;
+            height: 80px; */
+            margin: 6px;
+            text-align: center;
+            line-height: 80px;
+        }
+        #box1 {
+            background-color: darkorange;
+            /* order: 5; */
+            /* flex-basis: 5em;
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+            flex: 1 1 5em;
+        }
+        #box2 {
+            background-color: rgb(215, 93, 0);
+            /* flex-basis: 10em;
+            /* flex-grow: 5; */
+            /* flex-shrink: 5; */
+            flex: 1 3 3em;
+            align-self: center;
+        }
+        #box3 {
+            background-color: rgb(35, 225, 105);
+            /* order: -1; */
+            flex-basis: 8em;
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+
+        }
+        #box4 {
+            background-color: rgb(19, 82, 81);
+            flex-basis: 100px;
+
+        }
+        #box5 {
+            background-color: rgb(96, 8, 33);
+        }
+        #box6 {
+            background-color: rgb(196, 225, 35);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="flexbox1">
+        <div id="box1">A</div>
+        <div id="box2">B</div>
+        <div id="box3">C</div>
+        <div id="box4">D</div>
+        <div id="box5">E</div>
+        <div id="box6">F</div>
+    </div>
+    
+</body>
+</html>
