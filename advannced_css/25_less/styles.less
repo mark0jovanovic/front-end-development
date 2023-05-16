@@ -1,0 +1,53 @@
+// @primary-dark-color: #a2687e;
+
+
+// body {
+//     font-family: sans-serif;
+//     color: @primary-dark-color;
+// }
+// h1 {
+//     @primary-dark-color: blue;
+//     color: @primary-dark-color;
+// }
+// @my-selector:box;
+// @w: width;
+// .@{my-selector} {
+//     @{w}:960px;
+//     margin: 0 auto;
+// }
+// @min1280: (min-width: 1280px);
+
+// .box {
+//     @media @min1280 {
+//         width: 1024px;
+        
+//     }
+// }
+// article {
+//     h1 {
+//         color: red;
+//     }
+//     h2 {
+//         color: blue;
+//     }
+// }
+// .box {
+//     width: 960px;
+
+//     @media (min-width: 1280px) {
+//         width: 800px;
+        
+//     }
+// }
+
+.foo() {
+    color: blue;
+}
+#text-1 {
+    .foo();
+    font-size: 16px;
+}
+#text-2 {
+    .foo();
+    font-size: 16px;
+}
