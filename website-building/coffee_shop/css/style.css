@@ -1,0 +1,89 @@
+body {
+    font-family: 'Oswald', sans-serif
+}
+
+
+
+
+
+/**************************************HEADER****************************************/
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+#header-logo {
+    height: 24px;
+}
+
+header a {
+    color: white;
+    margin-left: 24px;
+}
+
+header a:hover {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************HERO SECTION****************************************/
+#hero-section {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#hearo-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #4133329c;
+    height: 100vh;
+
+}
+
+#hero-logo {
+    width: 256px;
+}
+
+#arrow-down {
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 64px;
+}
