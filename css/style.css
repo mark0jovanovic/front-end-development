@@ -1,0 +1,177 @@
+body {
+    font-family: 'Oswald', sans-serif
+}
+
+
+
+
+
+/**************************************HEADER****************************************/
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+#header-logo {
+    height: 24px;
+}
+
+header a {
+    color: white;
+    margin-left: 24px;
+}
+
+header a:hover {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+
+
+
+
+/**************************************HERO SECTION****************************************/
+#hero-section {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#hearo-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #4133329c;
+    height: 100vh;
+
+}
+
+#hero-logo {
+    width: 256px;
+}
+
+#arrow-down {
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 64px;
+}
+
+
+/**************************************INTRO SECTION****************************************/
+
+#intro-section {
+    background: #eae7de;
+
+}
+
+/**************************************ABOUT SECTION****************************************/
+#about-bg-1 {
+    background-image: url(../img/great-place.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 480px;
+
+}
+#about-bg-2 {
+    background-image: url(../img/fresh-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    min-height: 640px;
+
+}
+
+/**************************************MENU SECTION****************************************/
+
+#menu-section {
+    background: #eae7de;
+}
+
+
+/**************************************CONTACT SECTION****************************************/
+
+
+
+#contact-info-bg-1 {
+    background: linear-gradient(to right, #36313782, #36313782), url(../img/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+}
+#contact-info-bg-2 {
+    background-color: #312423a8;
+
+}
+
+/**************************************MAP SECTION****************************************/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #cc6f0400;
+    color: white;
+    padding: 0;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cf68142c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #bea385;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #8e5e3e00;}
+
+
+
+
+
+
+/**************************************FOOTER SECTION****************************************/
+footer {
+    background: #312423;
+}
+
+footer a img {
+    width: 32px;
+}

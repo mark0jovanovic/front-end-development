@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        body {
+            min-height:100vh;
+            font-family: sans-serif;
+            
+        }
+        
+        .gallery {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 150px));
+            gap: 70px;
+            margin-bottom: 50px;
+
+        }
+        .placeholder {
+            
+            object-fit: cover;
+            object-position: center;
+            
+            position: relative;
+            width: 180px;
+            height: 150px;
+            box-shadow: 2px 2px 2px #B4B4B4;
+            border-radius: 7%;
+            
+            background: linear-gradient(#6ba2d9 80%, #faf7ff 20%);
+        }
+        .image_title {
+            font-size: 18px;
+            text-align: center ;
+            width: 180px;
+            height: 25px;
+            
+            position: absolute;
+            bottom:0px;
+        }
+        @media screen and (max-width: 1024px) {
+        .gallery {
+            grid-template-columns: repeat(auto-fill, minmax(160px, 130px));
+            gap: 55px;
+            justify-content:space-around;
+            
+            
+            
+        
+        }
+        .placeholder {
+            width: 160px;
+            height: 130px;
+
+        }
+        .image_title {
+            font-size: 12px;
+            text-align: center ;
+            width: 160px;
+            height: 20px;
+            
+        }
+        
+        }
+
+        @media screen and (max-width: 768px) {
+         .gallery {
+            grid-template-columns: repeat(auto-fill, minmax(160px, 130px));
+            gap: 55px;
+                        
+            
+        
+        }
+        .placeholder {
+            width: 160px;
+            height: 130px;
+
+        }
+        .image_title {
+            font-size: 12px;
+            text-align: center ;
+            width: 160px;
+            height: 20px;
+            
+        }
+        
+        }
+
+        @media screen and (max-width: 425px) {
+            .gallery {
+            grid-template-columns: repeat(auto-fill, minmax(160px, 130px));
+            gap: 60px;
+                        
+            
+        
+        }
+        .placeholder {
+            width: 160px;
+            height: 130px;
+
+        }
+        .image_title {
+            font-size: 12px;
+            text-align: center ;
+            width: 160px;
+            height: 20px;
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        }
+
+
+       
+    </style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <div class="gallery">
+        <div class="placeholder">  <img  src="placeholder-image.png" style="position:absolute; top:0; left:0; width:100%;"><div class="image_title">Image Title</div></div>
+        <div class="placeholder">  <img  src="placeholder-image.png" style="position:absolute; top:0; left:0; width:100%;"><div class="image_title">Image Title</div></div>
+        <div class="placeholder">  <img  src="placeholder-image.png" style="position:absolute; top:0; left:0; width:100%;"><div class="image_title">Image Title</div></div>
+        <div class="placeholder">  <img  src="placeholder-image.png" style="position:absolute; top:0; left:0; width:100%;"><div class="image_title">Image Title</div></div>
+        <div class="placeholder">  <img  src="placeholder-image.png" style="position:absolute; top:0; left:0; width:100%;"><div class="image_title">Image Title</div></div>
+        <div class="placeholder">  <img  src="placeholder-image.png" style="position:absolute; top:0; left:0; width:100%;"><div class="image_title">Image Title</div></div>
+        <div class="placeholder">  <img  src="placeholder-image.png" style="position:absolute; top:0; left:0; width:100%;"><div class="image_title">Image Title</div></div>
+        <div class="placeholder">  <img  src="placeholder-image.png" style="position:absolute; top:0; left:0; width:100%;"><div class="image_title">Image Title</div></div>
+        <div class="placeholder">  <img  src="placeholder-image.png" style="position:absolute; top:0; left:0; width:100%;"><div class="image_title">Image Title</div></div>
+        <div class="placeholder">  <img  src="placeholder-image.png" style="position:absolute; top:0; left:0; width:100%;"><div class="image_title">Image Title</div></div>
+        
+    </div>
+    <div class="paragraph"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit saepe a repudiandae laudantium, et incidunt animi voluptate, deleniti dolore quo ut! Cumque, accusamus? Ex error nihil veniam eum quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et. Iusto, quam maxime omnis minus reprehenderit voluptas obcaecati iste natus doloremque quidem eum reiciendis fugiat odio exercitationem ex nihil deleniti!</p></div>
+   
+</body>
+</html>
