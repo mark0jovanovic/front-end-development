@@ -36,24 +36,6 @@ header a:visited {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**************************************HERO SECTION****************************************/
 #hero-section {
     background-image: url(../img/hero.jpg);
@@ -86,4 +68,112 @@ header a:visited {
     margin: 0 auto;
     display: block;
     width: 64px;
+}
+
+
+/**************************************INTRO SECTION****************************************/
+
+#intro-section {
+    background: #eae7de;
+
+}
+
+/**************************************ABOUT SECTION****************************************/
+#about-bg-1 {
+    background-image: url(../img/great-place.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 480px;
+
+}
+#about-bg-2 {
+    background-image: url(../img/fresh-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    min-height: 640px;
+
+}
+
+/**************************************MENU SECTION****************************************/
+
+#menu-section {
+    background: #eae7de;
+}
+
+
+/**************************************CONTACT SECTION****************************************/
+
+
+
+#contact-info-bg-1 {
+    background: linear-gradient(to right, #36313782, #36313782), url(../img/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+}
+#contact-info-bg-2 {
+    background-color: #312423a8;
+
+}
+
+/**************************************MAP SECTION****************************************/
+
+
+/*************************DROPDOWN BUTTON************************************************ */
+.dropbtn {
+    background-color: #cc6f0400;
+    color: white;
+    padding: 0;
+    font-size: 16px;
+    border: none;
+  }
+  
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cf68142c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+ 
+  .dropdown-content a:hover {background-color: #bea385;}
+  
+ 
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  
+  .dropdown:hover .dropbtn {background-color: #8e5e3e00;}
+
+
+
+
+
+
+/**************************************FOOTER SECTION****************************************/
+footer {
+    background: #312423;
+}
+
+footer a img {
+    width: 32px;
 }
