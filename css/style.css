@@ -31,6 +31,9 @@ header a:hover {
 header a:visited {
     color: white;
 }
+#menu-icon {
+    width: 32px;
+}
 
 
 
@@ -93,6 +96,26 @@ header a:visited {
     background-size: cover;
     background-position: left;
     min-height: 640px;
+    position: relative;
+
+}
+
+
+
+@media(max-width:768px){
+
+    #about-bg-2::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #080707bd;
+       
+
+
+}
 
 }
 
@@ -120,50 +143,9 @@ header a:visited {
 }
 
 /**************************************MAP SECTION****************************************/
-/* Dropdown Button */
-.dropbtn {
-    background-color: #cc6f0400;
-    color: white;
-    padding: 0;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #cf68142c;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #bea385;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #8e5e3e00;}
 
 
-
+/*************************DROPDOWN BUTTON************************************************ */
 
 
 
@@ -174,4 +156,15 @@ footer {
 
 footer a img {
     width: 32px;
+} 
+
+@media(max-width: 768px)  {
+    footer {
+        text-align:center;
+    }
+}
+#social-icons {
+    text-align: center !important;
+    margin-top: 8px;
+
 }

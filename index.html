@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
     <title>Coffe Shop Website Example</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap">
@@ -22,28 +24,24 @@
                     
 
                 </div>
-                <div class="col-8 text-right " >
-                    <div class="dropdown">
-                        <button class="dropbtn text-uppercase">OTHER PROJECTS</button>
-                        <div class="dropdown-content">
-                          <a href="projects/responsive_gallery/index.html">RESPONSIVE GALLERY</a>
-                          <a href="projects/glowing_circle/index.html">GLOVING CIRCLE</a>
-                          <a href="#">PROJECT 1</a>
-                        </div>
-                      </div>
+                
+                <div class="d-none d-md-block col-8 text-right " >
+                
+                   
                     <a class="text-decoration-none text-uppercase" href="#">about</a>
                     <a class="text-decoration-none text-uppercase" href="#">products</a>
                     <a class="text-decoration-none text-uppercase" href="#">contact</a>
-                    <a class="text-decoration-none text-uppercase" href="#">how to find us?</a>
+                    <a class="text-decoration-none text-uppercase" href="#">where to find us</a>
                     
-
-
+                </div>
+                <div class="d-md-none col-8 text-right">
+                    <img id="menu-icon" src="img/menu.png" alt="menu">
 
                 </div>
             </div>
         </div>
     </header>
-
+<!-- **********************************HERO**************************************************** -->
 
 
     <section id="hero-section" class="text-light">
@@ -58,8 +56,14 @@
             </div>
 
         </div>
-        <a id="arrow-down" href="#intro-section"><img src="img/arrow-down.png" alt="see more"></a>
+        <a id="arrow-down" href="#intro-section"><img class="img-fluid" src="img/arrow-down.png" alt="see more"></a>
     </section>
+
+
+
+
+
+    <!-- **********************************INTRO**************************************************** -->
 
     <section id="intro-section" class="py-5">
 
@@ -93,8 +97,8 @@
         </div>
 
     </section>
+    <!-- **********************************ABOUT**************************************************** -->
 
-    
     <section id="about-section">
         <div class="container-fluid">
             <div class="row">
@@ -131,9 +135,9 @@
 
 
     </section>
+    <!-- **********************************MENU**************************************************** -->
 
 
-    
     <section id="menu-section">
         <div class="container">
 
@@ -148,7 +152,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4 p-5 text-center">
                     <img class="img-fluid" src="img/coffee-item-1.png" alt="coffee item 1">
-                    <h2>BLACK CAKE</h2>
+                    <h2 class="pt-5">CAKE</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                     </p>
                     <p class="h3">4€</p>
@@ -156,7 +160,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 p-5 text-center">
                     <img class="img-fluid" src="img/coffee-item-2.png" alt="coffee item 1">
-                    <h2>BLACK COFFEE</h2>
+                    <h2 class="pt-5">COFFEE</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                     </p>
                     <p class="h3">6€</p>
@@ -164,7 +168,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 p-5 text-center">
                     <img class="img-fluid" src="img/coffee-item-3.png" alt="coffee item 1">
-                    <h2>ESSPRESO</h2>
+                    <h2 class="pt-5">ESSPRESO</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                     </p>
                     <p class="h3">6€</p>
@@ -172,7 +176,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 p-5 text-center">
                     <img class="img-fluid" src="img/coffee-item-4.png" alt="coffee item 1">
-                    <h2>LATTE</h2>
+                    <h2 class="pt-5">LATTE</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                     </p>
                     <p class="h3">6€</p>
@@ -180,7 +184,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 p-5 text-center">
                     <img class="img-fluid" src="img/coffee-item-5.png" alt="coffee item 1">
-                    <h2>MACARONS</h2>
+                    <h2 class="pt-5">MACARONS</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                     </p>
                     <p class="h3">3€</p>
@@ -188,7 +192,7 @@
                 </div>
                 <div class="col-sm-6 col-md-4 p-5 text-center">
                     <img class="img-fluid" src="img/coffee-item-6.png" alt="coffee item 1">
-                    <h2>MACCHIATO</h2>
+                    <h2 class="pt-5">MACCHIATO</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                     </p>
                     <p class="h3">6€</p>
@@ -200,11 +204,12 @@
         </div>
 
     </section>
+    <!-- **********************************CONTACT**************************************************** -->
 
     <section id="contact-info-section">
         <div class="container-fluid text-light">
             <div class="row" id="contact-info-bg-1">
-                <div class="col-5 offset-1 p-5">
+                <div class="col-md-5 offset-md-1 p-5">
                     <h2>YOU ARE WELCOME!</h2>
                     <p>COME ON IN!</p>
                     <br>
@@ -215,7 +220,7 @@
                     <p>12 PM - 02 AM</p>
 
                 </div>
-                <div class="col-6 p-5" id="contact-info-bg-2">
+                <div class="col-md-6 p-5" id="contact-info-bg-2">
                     <h2>CONTACT</h2>
                     <br>
                     <h4>PHONE</h4>
@@ -235,14 +240,16 @@
 
     </section>
 
+    <!-- **********************************FOOTER**************************************************** -->
+
     <footer >
         <div class="container-fluid py-3">
             <div class="row text-light">
-                <div class="col-5 offset-1 align-self-center">
+                <div class="col-md-5 offset-md-1 align-self-center">
                     Coffee Shop | © 2020 All rights reserved
 
                 </div>
-                <div class="col-5 text-right">
+                <div class="col-md-5 text-right " id="social-icons">
                     <a href="#"><img src="img/facebook-icon.png" alt="facebook icon"></a>
                     <a href="#" class="mx-3"><img src="img/instagram-icon.png" alt="instagram icon"></a>
                     <a href="#" class="mr-3"><img src="img/twitter-icon.png" alt="twitter icon"></a>
