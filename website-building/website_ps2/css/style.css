@@ -1,0 +1,159 @@
+:focus:not(:focus-visible) {
+    outline: 0;
+    box-shadow: none;
+
+  }
+
+  /**************************NAV BAR*********************************/
+  .navbar-brand {
+    font-size: 2rem; 
+}
+
+.navbar-toggler {
+    font-size: 0.8rem; 
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.8rem; 
+}
+
+
+
+
+/********************************FIRST SECTION***********************/
+#first-section  {
+    
+    
+        background-image: url(../imgs/hero.jpg);
+        
+        height: 70vh;
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        
+      }
+#green-container {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; 
+    
+    
+    max-width: 320px;
+    
+    
+
+    
+   
+    background-color: #31c486;
+
+
+
+
+}
+@media only screen and (max-width: 375px)  {
+    #green-container{
+        margin-top: 35px; 
+        font-size: small;
+    }
+    
+    
+}
+@media screen and (max-width: 2560px) {
+  #first-section {
+    height: 1000px; 
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #first-section {
+    height: 600px; 
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    #first-section {
+      height: 400px; 
+    }
+  }
+@media screen and (max-width: 768px) {
+    #first-section {
+      height: 300px; 
+    }
+    
+  }
+  
+  @media screen and (max-width: 576px) {
+    #first-section {
+      height: 150px; 
+  }
+}
+
+
+/******************************blog*************************************/
+#cow {
+  
+        
+        height: 100%;
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        overflow-wrap: break-word;
+        align-items: center;
+        
+        
+        
+      }
+      #cow img {
+        width: 100%;
+  height: auto;
+      }
+
+
+/******************************dark*************************************/
+
+#dark {
+  color: white;
+  background-color: #222 ;;
+
+}
+#dark hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+#gray-3 hr{
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+}
+#footer {
+  color: white;
+  background-color: #111 ;
+  height: 100%;
+
+}
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+
+
+
+
+
+        
+        
+    
+
+    
