@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a1</title>
+</head>
+<body>
+
+    <script>
+
+
+        class Student {
+            constructor(name, address, phone, course){
+                this.name = name;
+                this.address = address;
+                this.phone = phone;
+                this.course = course;
+
+            }
+            getInfo(){
+                return "Name: " + this.name + ", " +
+                    "Address: " + this.address + ", " +
+                    "Phone: " + this.phone + ", " +
+                    "Course: " + this.course 
+                    //obzirom na primer iz zadatka namerno sam pustio sve formatirano u jednoj koloni
+            }
+        }
+
+        let student1 = new Student("John Benson", "High Park 36", "(507) 833-3567", "Geography" )
+        let student2 = new Student("Peter James", "Long Avenue 45", "(337) 833-3567", "History" )
+        let student3 = new Student("Miroljub Stanko", "Palih Boraca 3 ", "(567) 222-3567", "Programming 1" )
+
+        console.log(student1.getInfo());
+        console.log(student2.getInfo());
+        console.log(student3.getInfo());
+
+
+
+    </script>
+    
+</body>
+</html>

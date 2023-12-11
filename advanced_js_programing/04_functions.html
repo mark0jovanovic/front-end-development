@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+
+    <script>
+
+        // function calculateRectArea(a,b) {
+        //     return a*b;
+        // }
+
+        // calculateRectArea(5,10);
+        // var result = calculateRectArea(5,10);
+        // console.log(result);
+
+        // function sayHallo(name){
+        //     console.log("hello " + name);
+        // }
+        // sayHallo("Ban");
+
+        // function sayHelloWorld(){
+        //     console.log("Hello World")
+        // }
+        // sayHelloWorld
+
+        // var calculate = new Function("a", "b", "return a*b");
+
+        // var  result = calculate(5,10);
+        // console.log(result);
+
+        // function sum() {
+        //     let returnValue = 0;
+        //     for(let i = 0; i < arguments.length; i++) {
+        //         returnValue += arguments[i];
+                
+        //     }
+        //     return returnValue;
+
+        // }
+
+        // let sumResult = sum(10, 15 , 15)
+        // console.log(sumResult);
+
+
+            // function countdown(start){
+            //     for(let i = start; i >=0; i--) {
+            //         console.log(i);
+            //     };
+            // }
+
+            // countdown(100);
+
+            function countdown(start){
+                if(start < 0){
+                    return;
+                }
+                console.log(start);
+                countdown(--start);
+            }
+            countdown(10);
+           
+
+
+
+    </script>
+    
+</body>
+</html>

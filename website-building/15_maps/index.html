@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <title>Maps</title>
+    <style>
+
+        #map {
+            height: 580px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div id="map"></div>
+
+
+    <script src="js/leaflet.js"></script>
+    <script>
+
+        var myMap = L.map('map', {
+            center: [37.974, 23.72],
+            zoom: 13,
+            // attributionControl: false,
+            // zoomControl: false,
+            // doubleClickZoom: false,
+            // scrollWheelZoom: false,
+            // dragging: false,
+            // minZoom: 10, 
+            // maxZoom: 17
+
+        });   
+
+
+        
+
+
+
+
+
+
+
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        { attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(myMap);
+
+        // myMap.locate({setView: true, maxZoom: 16});
+
+
+         var marker = L.marker([37.974, 23.72]).addTo(myMap);
+        var latLngs = [
+    [38.00729, 23.73508],
+    [37.99992, 23.73328],
+    [38.00084, 23.72757],
+    [37.98917, 23.72671]
+];
+ 
+var polyline = L.polyline(latLngs, { color: 'red' }).addTo(myMap);
+
+
+var latlngs = [
+    [37.99528, 23.73347],
+    [37.99174, 23.73250],
+    [37.99105, 23.73689],
+    [37.99162, 23.73910],
+    [37.99274, 23.74071],
+    [37.99411, 23.74101],
+    [37.99573, 23.74035],
+    [37.99489, 23.73612]
+];
+ 
+var polygon = L.polygon(latlngs, { color: 'red' }).addTo(myMap);
+ 
+myMap.fitBounds(polygon.getBounds());
+marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+marker.on("click", function(){
+    alert("You have clicked me!")
+
+})
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>

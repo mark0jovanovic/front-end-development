@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 2 - Website Building</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            body {
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+            #login-container {
+                width: 460px;
+                margin: 0 auto;
+            }
+
+            form label,
+            form input {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            form input {
+                padding: 8px;
+            }
+
+            form label {
+                font-weight: bold;
+            }
+
+            form div {
+                margin: 16px 0px;
+            }
+           
+            .validP {
+                color: green;
+                display: none;
+                position: relative;
+                top: 32px;
+                left: 341px;
+            }
+           
+            .notValidP {
+                color: red;
+                display: none;
+                
+                position: relative;
+                top: 32px;
+                left: 341px;
+            }
+            .validU {
+                color: green;
+                display: none;
+                position: relative;
+                top: 32px;
+                left: 341px;
+            }
+           
+            .notValidU {
+                color: red;
+                display: none;
+                
+                position: relative;
+                top: 32px;
+                left: 341px;
+            }
+            .invalidBorder {
+                border: 1px solid red;
+            }
+            .validBorder {
+                border: 1px solid green;
+            }
+            
+           
+            
+            
+            
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="login-container">
+
+            <form>
+                <div>
+                    <label for="username">Username:</label>
+                    <i class="validU material-icons">done</i>
+                    <i class="notValidU material-icons">close</i>
+                    <input class="input-field" id="username" type="text" >
+                    
+                    
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <i class="validP material-icons">done</i>
+                    <i class="notValidP material-icons">close</i>
+                    <input class="input-field" id="password" type="password">
+                    
+                    
+                </div>
+
+                <input type="submit" value="Login">
+            </form>
+
+        </div>
+
+        <script src="js/jquery-3.7.0.min.js"></script>
+
+        <script>
+            let correctUserName = "new_user";
+            let correctPassword = "123456789";
+           
+            
+            $("form").on("submit", function (event) {
+                event.preventDefault();
+
+                let usenameInput = $('#username').val();
+                let passwordInput = $('#password').val();
+                 
+
+                if(usenameInput === "") {
+                    $("#login-container").append('<p>*please, enter username</p>');
+                    $("#username").addClass('invalidBorder');
+                    $(".notValidU").show();
+
+
+                } else if (usenameInput !== correctUserName) {
+                    $("#login-container").append('<p>*please, enter valid username</p>');
+                    $("#username").addClass('invalidBorder');
+                    $(".notValidU").show();
+
+                } else {
+                    
+                    $("#username").addClass('validBorder');
+                    $(".validU").show();
+
+                }
+
+
+                if(passwordInput === "") {
+                    $("#login-container").append('<p>*please, enter password</p>');
+                    $("#password").addClass('invalidBorder');
+                    $(".notValidP").show();
+
+
+                } else if (passwordInput !== correctPassword) {
+                    $("#login-container").append('<p>*please, enter valid password</p>');
+                    $("#password").addClass('invalidBorder');
+                    $(".notValidP").show();
+
+                } else {
+                    
+                    $("#password").addClass('validBorder');
+                    $(".validP").show();
+
+                }
+
+
+                if (usenameInput === correctUserName && passwordInput === correctPassword) {
+                    $("#login-container").append('<p>Successful login!</p>');
+
+                }
+                
+
+                
+
+                
+
+            });
+
+        </script>
+
+    </body>
+</html>

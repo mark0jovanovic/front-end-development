@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes</title>
+</head>
+<body>
+    <script>
+          function Car(make, model, weight, color) {
+            this.make = make;
+            this.model = model;
+            this.weight = weight;
+            this.color = color;
+
+            
+
+        }
+        Car.prototype.getName = function() {
+                return this.make + " " + this.model;
+            };
+
+        Car.prototype.getInfo = function() {
+                return "Make: " + this.make + "\n" +
+                        "Model: " + this.model  + "\n" +
+                        "Weight: " + this.weight + "\n" +
+                        "Color: " + this.color 
+            }
+
+        let car1 = new Car("Subary", "Legacy", 1563, "Black");
+
+        let carName = car1.getName();
+        let carInfo = car1.getInfo();
+
+        console.log(carName);
+        console.log(carInfo);
+
+        function Convertible(make, model, weight, color, rooftype) {
+            Car.call(this,make, model, weight,color);
+            this.rooftype = rooftype;
+
+        };
+        
+
+        Convertible.prototype = Object.create(Car.prototype);
+        Convertible.prototype.constructor = Convertible;
+        Convertible.prototype.getInfo = function(){
+            return Car.prototype.getInfo.call(this) + "\n" +
+                        "Roof Type: " + this.rooftype
+
+        }
+
+        let convertible1 =  new Convertible("Honda", "s2000", 1243, "silver", "vinyl, soft-top");
+
+        let convertibleName = convertible1.getName();
+        let convertibleInfo = convertible1.getInfo();
+
+        console.log(convertibleName);
+        console.log(convertibleInfo);
+
+
+        function Pickup(make, model, weight, color, cargoVolume) {
+            Car.call(this, make, model, weight, color);
+            this.cargoVolume = cargoVolume;
+
+        };
+
+        Pickup.prototype = Object.create(Car.prototype);
+        Pickup.prototype.constructor = Pickup;
+
+        Pickup.prototype.getInfo = function(){
+            return Car.prototype.getInfo.call(this) + "\n" +
+                        "Cargo Volume: " + this.cargoVolume
+
+        }
+
+        let pickup1 = new Pickup("Ford", "F-150", 1678, "silver", 63);
+
+        let pickupName = pickup1.getName();
+        let pickupInfo = pickup1.getInfo();
+
+        console.log(pickupName);
+        console.log(pickupInfo);
+
+
+        
+
+         
+
+    </script>
+    
+</body>
+</html>

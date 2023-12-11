@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <!-- <div id="div-1">
+        <p id="p-1">Text 1</p>
+        <p id="p-2">Text 2</p>
+        <p>Text 3</p>
+    </div> -->
+
+    <!-- <p id="my-class">Text 1</p>
+    <p class="my-class">Text 2</p>
+    <p class="my-class some-other-class">Text 3</p>
+    <p>Text 4</p>
+    <p>Text 5</p>
+    <p class="your-class">Text 6</p> -->
+
+    <!-- <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul> -->
+
+    <p id="the-paragraph" class="myClass blue-text">Non-dynamic paragraph</p>
+    <!-- <input type="text" name="firstname" id="first-name" value="I want to be button!"> -->
+
+
+
+
+    <script>
+        // var paragraph = document.getElementById('p-2');
+        // alert(paragraph.innerHTML)
+
+        // var paragraphs = document.getElementsByClassName("my-class")
+        // console.log(paragraphs)
+        // for (let i = 0; i < paragraphs.length; i++) {
+        //     console.log(paragraphs[i].innerHTML)
+        // }
+
+        // var items = document.getElementsByTagName("li");
+        // console.log(items.length)
+        
+        // var paragraph = document.getElementById('the-paragraph');
+        // console.log("Original paragraph content was: " + paragraph.innerHTML)
+
+        // paragraph.innerHTML = "New text set using innerHtml property";
+        // console.log(paragraph.innerHTML)
+        // console.log("Id:" + paragraph.id)
+        // console.log("Class:" + paragraph.className)
+
+
+        // var input = document.getElementById("first-name");
+        // input.setAttribute("type", "button")
+        // paragraph.style.color = "blue";
+         var newParagraph = document.createElement("p");
+         var newContent = document.createTextNode("This is dynamically generated paragraph!");
+         newParagraph.appendChild(newContent);
+         document.body.appendChild(newParagraph)
+         var oldParagraph = document.getElementById("the-paragraph");
+         
+
+
+            
+
+
+    </script>
+     
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+    <script>
+        // var subaryLegacy = {
+        //     make: "subary",
+        //     model: "legacy",
+        //     weight: 1560,
+        //     color: "black"
+        // };
+
+        // var subaryLegacy = new Object();
+        // subaryLegacy.make = "Subary";
+        // subaryLegacy.model = "Legacy";
+        // subaryLegacy.weight = 1560;
+        // subaryLegacy.color = "Black"
+
+
+        function Car(make, model, weight, color) {
+            this.make = make;
+            this.model = model;
+            this.weight = weight;
+            this.color = color;
+
+            this.startEngine = function(){
+                return "Engine of " + this.make + " started.";
+            }
+
+        }
+        var subaryLegacy = new Car("subary", "legacy", 1560, 'black');
+        var fordTaurus = new Car("taurus", "ford", 1560, "yellow");
+
+
+        console.log(fordTaurus.startEngine());
+    </script>
+    
+</body>
+</html>
